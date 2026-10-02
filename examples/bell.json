@@ -1,0 +1,9 @@
+{
+  "name": "bell",
+  "qubits": 2,
+  "tolerance": 1e-9,
+  "steps": [
+    { "kind": "gate", "gate": { "type": "H", "target": 0 } },
+    { "kind": "gate", "gate": { "type": "CX", "control": 0, "target": 1 } }
+  ]
+}

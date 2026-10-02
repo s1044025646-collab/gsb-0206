@@ -1,0 +1,32 @@
+{
+  "name": "quantum-circuit-sim",
+  "version": "1.0.0",
+  "description": "Windows 本地运行的小规模量子线路状态向量与测量分支模拟后端（API + CLI）",
+  "type": "module",
+  "main": "dist/src/cli/index.js",
+  "bin": {
+    "qsim": "dist/src/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-strip-types --no-warnings test/run-tests.ts",
+    "start": "node dist/src/api/server.js",
+    "start:ts": "node --experimental-strip-types --no-warnings src/api/server.ts",
+    "demo": "node --experimental-strip-types --no-warnings src/cli/index.ts demo",
+    "cli": "node --experimental-strip-types --no-warnings src/cli/index.ts"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "keywords": [
+    "quantum",
+    "simulator",
+    "statevector",
+    "sqlite"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.7.0"
+  }
+}

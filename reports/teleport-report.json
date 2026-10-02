@@ -1,0 +1,288 @@
+{
+  "title": "量子传态演示报告（含中途测量与经典控制修正）",
+  "convention": "q0 MSB；测量 a=q0,b=q1；修正后 q2 应恢复输入态",
+  "cases": [
+    {
+      "label": "zero",
+      "input": {
+        "label": "zero",
+        "alpha": 1,
+        "theta": 0
+      },
+      "saved": {
+        "name": "teleport-alpha-1.00-theta-0.00",
+        "version": 1,
+        "id": 1,
+        "createdAt": "2026-10-02T02:49:22.510Z"
+      },
+      "snapshotId": 1,
+      "targetP1": 0,
+      "exactComplete": true,
+      "totalWeight": 1,
+      "branches": [
+        {
+          "outcomes": [
+            {
+              "bit": "a",
+              "qubit": 0,
+              "result": 0
+            },
+            {
+              "bit": "b",
+              "qubit": 1,
+              "result": 0
+            }
+          ],
+          "weight": 0.25000000000000006,
+          "q2Probability0": 1,
+          "q2Probability1": 0
+        },
+        {
+          "outcomes": [
+            {
+              "bit": "a",
+              "qubit": 0,
+              "result": 0
+            },
+            {
+              "bit": "b",
+              "qubit": 1,
+              "result": 1
+            }
+          ],
+          "weight": 0.25000000000000017,
+          "q2Probability0": 1,
+          "q2Probability1": 0
+        },
+        {
+          "outcomes": [
+            {
+              "bit": "a",
+              "qubit": 0,
+              "result": 1
+            },
+            {
+              "bit": "b",
+              "qubit": 1,
+              "result": 0
+            }
+          ],
+          "weight": 0.24999999999999983,
+          "q2Probability0": 1,
+          "q2Probability1": 0
+        },
+        {
+          "outcomes": [
+            {
+              "bit": "a",
+              "qubit": 0,
+              "result": 1
+            },
+            {
+              "bit": "b",
+              "qubit": 1,
+              "result": 1
+            }
+          ],
+          "weight": 0.24999999999999994,
+          "q2Probability0": 1,
+          "q2Probability1": 0
+        }
+      ],
+      "sampleCounts": {
+        "a=0,b=0": 503,
+        "a=1,b=1": 492,
+        "a=1,b=0": 495,
+        "a=0,b=1": 510
+      }
+    },
+    {
+      "label": "plus",
+      "input": {
+        "label": "plus",
+        "alpha": 0.7071067811865476,
+        "theta": 0
+      },
+      "saved": {
+        "name": "teleport-alpha-0.71-theta-0.00",
+        "version": 1,
+        "id": 2,
+        "createdAt": "2026-10-02T02:49:22.528Z"
+      },
+      "snapshotId": 2,
+      "targetP1": 0.4999999999999999,
+      "exactComplete": true,
+      "totalWeight": 1,
+      "branches": [
+        {
+          "outcomes": [
+            {
+              "bit": "a",
+              "qubit": 0,
+              "result": 0
+            },
+            {
+              "bit": "b",
+              "qubit": 1,
+              "result": 0
+            }
+          ],
+          "weight": 0.25000000000000006,
+          "q2Probability0": 0.5000000000000001,
+          "q2Probability1": 0.4999999999999999
+        },
+        {
+          "outcomes": [
+            {
+              "bit": "a",
+              "qubit": 0,
+              "result": 0
+            },
+            {
+              "bit": "b",
+              "qubit": 1,
+              "result": 1
+            }
+          ],
+          "weight": 0.25000000000000017,
+          "q2Probability0": 0.5000000000000001,
+          "q2Probability1": 0.4999999999999999
+        },
+        {
+          "outcomes": [
+            {
+              "bit": "a",
+              "qubit": 0,
+              "result": 1
+            },
+            {
+              "bit": "b",
+              "qubit": 1,
+              "result": 0
+            }
+          ],
+          "weight": 0.24999999999999983,
+          "q2Probability0": 0.5000000000000001,
+          "q2Probability1": 0.4999999999999999
+        },
+        {
+          "outcomes": [
+            {
+              "bit": "a",
+              "qubit": 0,
+              "result": 1
+            },
+            {
+              "bit": "b",
+              "qubit": 1,
+              "result": 1
+            }
+          ],
+          "weight": 0.24999999999999994,
+          "q2Probability0": 0.5000000000000001,
+          "q2Probability1": 0.4999999999999999
+        }
+      ],
+      "sampleCounts": {
+        "a=0,b=0": 503,
+        "a=1,b=1": 492,
+        "a=1,b=0": 495,
+        "a=0,b=1": 510
+      }
+    },
+    {
+      "label": "general",
+      "input": {
+        "label": "general",
+        "alpha": 0.6,
+        "theta": 1.0471975511965976
+      },
+      "saved": {
+        "name": "teleport-alpha-0.60-theta-1.05",
+        "version": 1,
+        "id": 3,
+        "createdAt": "2026-10-02T02:49:22.543Z"
+      },
+      "snapshotId": 3,
+      "targetP1": 0.64,
+      "exactComplete": true,
+      "totalWeight": 1,
+      "branches": [
+        {
+          "outcomes": [
+            {
+              "bit": "a",
+              "qubit": 0,
+              "result": 0
+            },
+            {
+              "bit": "b",
+              "qubit": 1,
+              "result": 0
+            }
+          ],
+          "weight": 0.25000000000000006,
+          "q2Probability0": 0.36,
+          "q2Probability1": 0.64
+        },
+        {
+          "outcomes": [
+            {
+              "bit": "a",
+              "qubit": 0,
+              "result": 0
+            },
+            {
+              "bit": "b",
+              "qubit": 1,
+              "result": 1
+            }
+          ],
+          "weight": 0.2500000000000001,
+          "q2Probability0": 0.36,
+          "q2Probability1": 0.64
+        },
+        {
+          "outcomes": [
+            {
+              "bit": "a",
+              "qubit": 0,
+              "result": 1
+            },
+            {
+              "bit": "b",
+              "qubit": 1,
+              "result": 0
+            }
+          ],
+          "weight": 0.24999999999999986,
+          "q2Probability0": 0.36,
+          "q2Probability1": 0.64
+        },
+        {
+          "outcomes": [
+            {
+              "bit": "a",
+              "qubit": 0,
+              "result": 1
+            },
+            {
+              "bit": "b",
+              "qubit": 1,
+              "result": 1
+            }
+          ],
+          "weight": 0.2499999999999999,
+          "q2Probability0": 0.36,
+          "q2Probability1": 0.64
+        }
+      ],
+      "sampleCounts": {
+        "a=0,b=0": 503,
+        "a=1,b=1": 492,
+        "a=1,b=0": 495,
+        "a=0,b=1": 510
+      }
+    }
+  ]
+}

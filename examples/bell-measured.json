@@ -1,0 +1,11 @@
+{
+  "name": "bell-measured",
+  "qubits": 2,
+  "tolerance": 1e-9,
+  "steps": [
+    { "kind": "gate", "gate": { "type": "H", "target": 0 } },
+    { "kind": "gate", "gate": { "type": "CX", "control": 0, "target": 1 } },
+    { "kind": "measure", "measurement": { "id": "a", "qubit": 0, "store": "a" } },
+    { "kind": "measure", "measurement": { "id": "b", "qubit": 1, "store": "b" } }
+  ]
+}
