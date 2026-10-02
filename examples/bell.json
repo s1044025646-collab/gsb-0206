@@ -1,0 +1,10 @@
+{
+  "name": "bell-demo",
+  "qubits": 2,
+  "seed": 42,
+  "steps": [
+    { "kind": "gate", "gate": "H", "target": 0 },
+    { "kind": "gate", "gate": "CNOT", "controls": [0], "target": 1 },
+    { "kind": "measure" }
+  ]
+}

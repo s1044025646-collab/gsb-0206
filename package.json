@@ -1,0 +1,26 @@
+{
+  "name": "quantum-circuit-sim",
+  "version": "1.0.0",
+  "description": "本地量子线路状态向量与测量分支模拟后端（TypeScript + Node.js + SQLite）",
+  "type": "commonjs",
+  "main": "dist/src/server.js",
+  "bin": {
+    "qsim": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx --test tests/*.test.ts",
+    "start": "tsx src/server.ts",
+    "start:dist": "node dist/src/server.js",
+    "demo": "tsx examples/demo.ts",
+    "cli": "tsx src/cli.ts"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
